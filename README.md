@@ -1,3 +1,9 @@
+![weather-app guncel](https://user-images.githubusercontent.com/71129017/220636286-72ec6d5b-3613-4b7f-9f75-608c7235a37d.png)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
