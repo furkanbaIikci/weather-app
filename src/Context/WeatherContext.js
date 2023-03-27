@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from "react";
-import city from "../Cities";
 import axios from "axios";
 
 const WeatherContext = createContext();
@@ -9,6 +8,9 @@ export const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState({});
   const APIKEY = process.env.REACT_APP_WEATHER_API_KEY;
 
+  /* Hava durumu bilgisini almak icin openweathermap API'na enlem, boylam ve apikey ile istekte bulunuyoruz
+    Her sehir degistiginde bu istek tekrar ediyor
+  */
   useEffect(() => {
     axios
       .get(
